@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="list roundBorder">
+      <div class="date">
+        <div class="dateLeft">
+          <div id="dateNumber"></div>
+          <div>
+            <div id="dateMonth"></div>
+            <div id="dateYear"></div>
+          </div>
+        </div>
+        <div id="dateText"></div>
+      </div>
+      <form id="form">
+        <input
+          id="inputTask"
+          type="text"
+          name="taskText"
+          autocomplete="off"
+          placeholder="Nueva tarea"
+          class="roundBorder"
+        />
+        <button type="submit" class="addTaskButton">+</button>
+        <button type="button" id="orderBtn" class="orderButton roundBorder">
+          Ordenar
+        </button>
+      </form>
+      <div id="tasksContainer"></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
